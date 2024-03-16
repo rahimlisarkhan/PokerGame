@@ -28,6 +28,11 @@ function Game() {
     const playerCount = +inputRef.current.value;
     let i = 1;
 
+    if (playerCount > 6) {
+      alert("You can enter max 6 players");
+      return;
+    }
+
     const newPlayers = [];
 
     while (i <= playerCount) {
