@@ -12,12 +12,12 @@ function Player({ name, cards }) {
         {!cards?.length && (
           <>
             <img
-              width={100}
+              width={80}
               src={cardBack}
               style={{ transform: "rotate(45deg)" }}
             />
             <img
-              width={100}
+              width={80}
               src={cardBack}
               style={{ transform: "rotate(15deg)" }}
             />
@@ -30,7 +30,7 @@ function Player({ name, cards }) {
           return (
             <img
               key={"card-image-" + index}
-              width={100}
+              width={80}
               src={card.image}
               style={{ transform: `rotate(${value}deg)` }}
             />
